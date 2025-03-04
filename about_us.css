@@ -1,0 +1,38 @@
+.about_makst {
+  display: flex;
+  background-color: #72c563;
+  color: white;
+  align-items: center;
+}
+
+.about_makst_text {
+  padding: 0px 20px;
+}
+
+.mission,
+.o_makst {
+  margin: 0px 8.333vw;
+  margin-top: 40px;
+}
+
+.map h1 {
+  margin-left: 8.333vw;
+}
+iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .about_makst {
+    flex-direction: column;
+  }
+  .about_makst_text {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  iframe {
+    height: 300px;
+  }
+}

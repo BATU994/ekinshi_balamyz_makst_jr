@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="upper_info pt-2">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex gap-2">
+          <img src="images/logo.png" alt="" />
+          <div class="pt-4 high-medicine-text">
+            <p>Высококачественная медицинская <br />помощь и диагностика.</p>
+          </div>
+        </div>
+        <div class="geo">
+          <div class="geo_img">
+            <img
+              src="images/bx_map.png"
+              class="pt-4 image-of-navigation"
+              alt=""
+            />
+          </div>
+          <div class="high-medicine-text2">
+            Астана, район Сарыарка, улица Абая 11/1
+          </div>
+        </div>
+
+        <div class="pt-4 number">
+          <div class="d-flex g-4">
+            <div class="num_img">
+              <img src="images/Vector (3).png" class="image-of-call" alt="" />
+            </div>
+            <div class="num_num">
+              <p class="text">
+                +7 775 984 3534<br /><span class="text-secondary micro-text"
+                  >Пн. - Пт.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="waz_outer pt-3 ms-">
+          <a href="https://wa.me/77759843534" target="_blank">
+            <div class="waz">
+              <img
+                src="images/whatsapp-svgrepo-com (1).svg"
+                alt=""
+                width="40px"
+              />
+              <h2>Whatsapp</h2>
+            </div>
+          </a>
+        </div>
+        <div class="mt-4 burger">
+          <button
+            onclick="navShow()"
+            style="background-color: transparent; border: solid 0"
+          >
+            <img src="images/ei_navicon.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <!-- section1end -->
+      <!-- section2 -->
+      <div class="pe-5 nav_list">
+        <ul class="d-flex justify-content-between">
+          <li class="nav">
+            <a href="./index.html" class="">Главная</a>
+          </li>
+
+          <li class="nav"><a href="./about_us.html" class="">О центре</a></li>
+          <li class="nav">
+            <a href="./speci_pro.html" class="">Врачи</a>
+          </li>
+
+          <li class="nav"><a href="./feedback.html" class="">Отзывы</a></li>
+        </ul>
+        <div class="geo_mob">
+          <div class="geo_img">
+            <img
+              src="images/bx_map.png"
+              class="pt-4 image-of-navigation"
+              alt=""
+            />
+          </div>
+          <div class="high-medicine-text2">
+            Астана, район Сарыарка, улица Абая 11/1
+          </div>
+        </div>
+        <div class="pt-4 num_mob">
+          <div class="d-flex g-4">
+            <div class="num_img">
+              <img src="images/Vector (3).png" class="image-of-call" alt="" />
+            </div>
+            <div class="num_num">
+              <p class="text">
+                +7 775 984 3534<br /><span class="text-secondary micro-text"
+                  >Пн. - Пт.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="waz_outer_mob pt-3 ms-">
+          <a href="https://wa.me/77759843534" target="_blank">
+            <div class="waz">
+              <img
+                src="images/whatsapp-svgrepo-com (1).svg"
+                alt=""
+                width="40px"
+              />
+              <h2>Whatsapp</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="speci_all">
+      <div class="speci_list"></div>
+    </div>
+    <footer class="footer text-light">
+      <div class="container">
+        <div class="row">
+          <!-- Список услуг -->
+          <div class="col-md-6 text-light dd d-flex flex-column gap-5">
+            <div class="col nav">
+              <a href="" style="color: white !important">Анализы</a>
+            </div>
+
+            <div class="col nav">
+              <a href="" style="color: white !important">Справки</a>
+            </div>
+
+            <div class="col nav">
+              <a href="" style="color: white !important">Поликлиника</a>
+            </div>
+
+            <div class="col nav">
+              <a href="" style="color: white !important">Стоматология</a>
+            </div>
+            <div class="col nav">
+              <a href="" style="color: white !important">Косметология</a>
+            </div>
+          </div>
+
+          <!-- Адрес и соцсети -->
+          <div class="col-md-6 text-end dd">
+            <p><strong>НАШ АДРЕС</strong></p>
+            <p>📍 г. Астана xxx xxxxx</p>
+            <div class="m">
+              <img src="images/akar-icons_instagram-fill.svg" alt="" />
+              <img src="images/fa_youtube.png" alt="" />
+              <img src="images/cib_vk.png" alt="" />
+            </div>
+
+            <p class="pt-4">© 2025 MakST - клиника</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        async function loadDoctors() {
+          try {
+            let url =
+              "https://docs.google.com/spreadsheets/d/1xGt-xQ7k0nBMIgWryOehE-pij71AdKV4XNBAHAhOmlA/gviz/tq?tqx=out:json&gid=1201755514";
+            const response = await fetch(url);
+            const text = await response.text();
+            const json = JSON.parse(text.substring(47, text.length - 2));
+
+            const speci_list = document.querySelector(".speci_list");
+            speci_list.innerHTML = "";
+
+            json.table.rows.forEach((row) => {
+              const cells = row.c.map((cell) => cell?.v || "N/A");
+              const rowElement = document.createElement("div");
+
+              rowElement.innerHTML = `
+        <img src="${cells[1]}" class="image_up" alt="">
+        <div class="upper_row">
+            <p>Имя Фамилия</p>
+            <h1>${cells[0]}</h1>
+        </div>
+        <p class="stage">Стаж: ${cells[2]}</p>
+        <p class="desc">${cells[3]}</p>
+        <div class="number_row" style="display:flex">
+          <img src="images/Vector (1).svg" style="width:40px"/>
+          <h3>${cells[4]}</h3>
+        </div>
+      `;
+              rowElement.classList.add("rowElem");
+              speci_list.appendChild(rowElement);
+            });
+          } catch (error) {
+            console.error("Ошибка загрузки данных:", error);
+          }
+        }
+      );
+    </script>
+  </body>
+</html>

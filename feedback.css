@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titan+One&display=swap');
+
+.nav {
+    font-size: 20.18px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 15.83px;
+  }
+  a {
+    position: relative;
+    font-size: 20.18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 15.83px;
+    color: black !important;
+    text-decoration: none !important;
+    transition: color 0.1s ease-in-out;
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 0;
+    height: 3px;
+    background-color: rgba(147, 236, 130, 1);
+    transition: width 0.1s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
+  
+  a:hover {
+    color: rgba(147, 236, 130, 1);
+  }
+  
+  a.active {
+    color: rgba(147, 236, 130, 1) !important;
+  }
+  
+  a.active::after {
+    width: 100%;
+  }
+  
+  .iframe {
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+  }
+
+
+  
+  .cart {
+    width: 400px;
+    
+    justify-content: center;
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile h3 {
+    font-size: 16px;
+    color: #1e2a38;
+  }
+  
+  .stars {
+    color: #f4b400;
+  }
+  
+  .text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  .starimage {
+    width: 20px;
+    height: 20px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.5;
+	background-color: #f1f3fb;
+	padding: 0 2rem;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.card {
+	margin: 2rem auto;
+	display: flex;
+
+	width: 100%;
+	max-width: 425px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.card-image {
+	border-radius: 8px;
+	overflow: hidden;
+	padding-bottom: 65%;
+	background-image: url('https://plus.unsplash.com/premium_photo-1661338876264-e9499777534d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNhbCUyMGNlbnRlcnxlbnwwfHwwfHx8MA%3D%3D');
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 0 5%;
+	position: relative;
+}
+
+.card-heading {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	right: 10%;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #735400;
+	line-height: 1.222;
+	small {
+		display: block;
+		font-size: .75em;
+		font-weight: 400;
+		margin-top: .25em;
+	}
+}
+
+.card-form {
+	padding: 2rem 1rem 0;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.input-field1,.input-field2,.input-field3 {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		&+.input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.action {
+	margin-top: 2rem;
+}
+
+.action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+.action-button2{
+  font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.card-info {
+	padding: 1rem 1rem;
+	text-align: center;
+	font-size: .875rem;
+	color: #8597a3;
+	a {
+		display: block;
+		color: #6658d3;
+		text-decoration: none;
+	}
+}
+
+
+input[type="range"] {
+  --s: 60px; /* control the size*/
+  
+  --_c: #7b7b7b 50%,#fff220 0;
+  height: var(--s);
+  gap: 30px;
+  aspect-ratio: attr(max type(<integer>));
+  padding-inline: calc(var(--s)/2);
+  box-sizing: border-box;
+  mask: 
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 L79 95 L2 40 L98 40 L21 95 Z'/></svg>") 0/var(--s) var(--_m,);
+  appearance: none;
+  cursor: pointer;
+}
+input[type="range" i]::-webkit-slider-thumb{
+  width: 1px;
+  border-image: 
+    conic-gradient(at calc(50% + var(--s)/2),var(--_c))
+    fill 0//var(--s) calc(20*var(--s));
+  appearance: none;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  border-image: 
+    conic-gradient(at calc(50% + var(--s)/2),var(--_c))
+    fill 0//var(--s) calc(20*var(--s));
+  appearance: none;
+}
+input[type="range"]:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  --_m:,conic-gradient(from 90deg at 2px 2px,#0000 25%,#000 0) 0 0/calc(100% - 2px) calc(100% - 2px);
+}
+
+@supports not (d:attr(d type(*))) {
+  input[type="range"] {
+    aspect-ratio: 5; 
+  }
+}
+
+  
+
+
+
+
+.container {
+    display: none; 
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+    z-index: 1000;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+  pointer-events: all; 
+}
